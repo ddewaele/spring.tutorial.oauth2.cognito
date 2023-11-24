@@ -3,10 +3,6 @@ server:
   servlet:
     context-path: /
 
-
-
-
-
 spring:
   security:
     oauth2:
