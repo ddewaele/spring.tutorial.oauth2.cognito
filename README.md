@@ -14,7 +14,7 @@ https://cognito-idp.eu-central-1.amazonaws.com/eu-central-1_laH88DAFr/.well-know
 
 ## Configuration
 
-```aidl
+```
 spring:
   security:
     oauth2:

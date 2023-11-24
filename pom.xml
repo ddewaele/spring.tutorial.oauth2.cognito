@@ -8,8 +8,8 @@
 		<version>3.0.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ecs.tutorial.oauth2.resource</groupId>
-	<artifactId>tutorial.oauth2.cognito</artifactId>
+	<groupId>com.ecs</groupId>
+	<artifactId>spring.tutorial.oauth2.cognito</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<description>Demo project for Spring Boot</description>
 	<properties>
