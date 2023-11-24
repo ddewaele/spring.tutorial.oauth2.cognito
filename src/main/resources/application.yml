@@ -1,0 +1,30 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+
+
+
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          cognito:
+            clientId: xxx
+            clientSecret: yyy
+            scope: openid
+            redirect-uri: http://localhost:8080/login/oauth2/code/cognito
+            clientName: spring-boot-cognito-oauth2
+        provider:
+          cognito:
+            issuerUri: https://cognito-idp.eu-central-1.amazonaws.com/eu-central-1_laH88DAFr
+            user-name-attribute: email
+
+logging:
+  level:
+    org:
+      springframework:
+        security: TRACE
