@@ -70,3 +70,7 @@ spring:
   "username": "87071b8c-61aa-454b-8892-65547685bdd8"
 }
 ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
