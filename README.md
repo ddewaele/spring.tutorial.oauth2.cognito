@@ -1,6 +1,24 @@
 ## Introduction
 
-Simple oAuth2 client application to test the Cognito oAuth2 provider using the authorization code grant.
+This is a sample Spring Boot application demonstrating how to create OAuth2-protected endpoints using Spring Security. 
+The application includes several endpoints with different access restrictions and uses Amazon Cognito as an OAuth2 provider for authentication and authorization.
+Uses the oAuth2 Authorization Code Grant type for authentication.
+
+Exposes some endpoints where authorization is enforced using roles
+
+Here's a Markdown table for the provided endpoint descriptions:
+
+| Endpoint        | Description                                        | Method | Access                    | Example                          |
+|-----------------|----------------------------------------------------|--------|---------------------------|----------------------------------|
+| `/public`       | Public endpoint accessible to all users.         | GET    | No authentication required | [http://localhost:8080/public](http://localhost:8080/public)             |
+| `/authenticated`| Authenticated endpoint displaying the user's principal. | GET | Requires authentication  | [http://localhost:8080/authenticated](http://localhost:8080/authenticated) |
+| `/employee`     | Employee-only endpoint displaying the user's principal. | GET | Requires "EMPLOYEE" role | [http://localhost:8080/employee](http://localhost:8080/employee)       |
+| `/admin`        | Admin-only endpoint displaying the user's principal.    | GET | Requires "ADMIN" role    | [http://localhost:8080/admin](http://localhost:8080/admin)             |
+
+You can copy and paste this Markdown table into your README.md file to provide a clear overview of the endpoints in your Spring Boot application.
+
+
+
 
 Uses the following URL structure 
 
