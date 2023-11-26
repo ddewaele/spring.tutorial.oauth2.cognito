@@ -11,13 +11,13 @@ spring:
           cognito:
             clientId: xxx
             clientSecret: yyy
-            scope: openid
+            scope: openid, profile, email
             redirect-uri: http://localhost:8080/login/oauth2/code/cognito
-            clientName: spring-boot-cognito-oauth2
+#            clientName: spring-boot-cognito-oauth2
         provider:
           cognito:
-            issuerUri: https://cognito-idp.eu-central-1.amazonaws.com/eu-central-1_laH88DAFr
-            user-name-attribute: email
+            issuerUri: https://cognito-idp.eu-central-1.amazonaws.com/eu-central-1_7s0YJek0R
+            user-name-attribute: username
 
 logging:
   level:
